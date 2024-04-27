@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: MicroUser
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
+
+server:
+  port: 8083
